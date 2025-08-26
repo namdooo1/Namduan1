@@ -51,74 +51,63 @@ label {
     margin-bottom: 8px;
     font-weight: 500;
     color: #2c3e50;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-        }
-        
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #3498db;
-            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-        }
-        
-        .radio-group, .checkbox-group {
-            margin: 15px 0;
-        }
-        
-        .radio-option, .checkbox-option {
-            margin: 10px 0;
-        }
-        
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 10px;
-            transform: scale(1.2);
-        }
-        
-        .divider {
-            height: 1px;
-            background: #eaeaea;
-            margin: 25px 0;
-        }
-        
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-            display: block;
-            margin: 30px auto 0;
-        }
-        
-        button:hover {
-            background-color: #2980b9;
-        }
-        
-        .required {
-            color: #e74c3c;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-            
+      }        
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+       width: 100%;
+       padding: 12px 15px;
+       border: 1px solid #ddd;
+       border-radius: 6px;
+       font-size: 16px;
+       transition: border-color 0.3s;
+       }       
+    input:focus,
+    textarea:focus {
+       outline: none;
+       border-color: #3498db;
+       box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+       }  
+.radio-group, .checkbox-group {
+       margin: 15px 0;
+       }       
+.radio-option, .checkbox-option {
+       margin: 10px 0;
+       } 
+       input[type="radio"],
+       input[type="checkbox"] {
+         margin-right: 10px;
+         transform: scale(1.2);
+       }        
+.divider {
+       height: 1px;
+       background: #eaeaea;
+       margin: 25px 0;
+       }      
+button {
+       background-color: #3498db;
+       color: white;
+       border: none;
+       padding: 12px 25px;
+       border-radius: 6px;
+       cursor: pointer;
+       font-size: 16px;
+       font-weight: 500;
+       transition: background-color 0.3s;
+       display: block;
+       margin: 30px auto 0;
+       }        
+button:hover {
+       background-color: #2980b9;
+        }        
+.required {
+       color: #e74c3c;
+        }       
+@media (max-width: 600px) {
+       .container {
+       padding: 20px;
+        }           
             input[type="text"],
             input[type="email"],
             input[type="number"],
@@ -131,28 +120,22 @@ label {
 </head>
 <body>
  <div class="container">
-        <h1>Khảo Sát ITviec</h1>
-        
+        <h1>Khảo Sát ITviec</h1>        
         <form id="surveyForm">
-            <h2>Thông Tin Cá Nhân</h2>
-            
+            <h2>Thông Tin Cá Nhân</h2>           
             <div class="form-group">
                 <label for="name">Họ tên <span class="required">*</span></label>
                 <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
-            </div>
-            
+            </div>            
             <div class="form-group">
                 <label for="email">Email <span class="required">*</span></label>
                 <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
-            </div>
-            
+            </div>           
             <div class="form-group">
                 <label for="age">Tuổi</label>
                 <input type="number" id="age" name="age" placeholder="Nhập tuổi" min="10" max="100">
-            </div>
-            
-            <div class="divider"></div>
-            
+            </div>            
+            <div class="divider"></div>           
             <h2>Hiện tại bạn đang là?</h2>
             <div class="radio-group">
                 <div class="radio-option">
@@ -161,10 +144,8 @@ label {
                     <input type="radio" id="worker" name="occupation" value="worker" checked>
                     <label for="worker" >công nhân/người đi làm </label>
                 </div>
-            </div>
-            
-            <div class="divider"></div>
-            
+            </div>            
+            <div class="divider"></div>            
             <h2>Bạn sẽ giới thiệu ITviec với bạn bè chứ?</h2>
             <div class="radio-group">
                 <div class="radio-option">
@@ -179,10 +160,8 @@ label {
                     <input type="radio" id="maybe" name="recommend" value="maybe" checked>
                     <label for="maybe">Có thể</label>
                 </div>
-            </div>
-            
-            <div class="divider"></div>
-            
+            </div>            
+            <div class="divider"></div>            
             <h2>Ngôn ngữ lập trình và Framework bạn đã biết? (Có thể chọn nhiều đáp án)</h2>
             <div class="checkbox-group">
                 <div class="checkbox-option">
@@ -197,10 +176,8 @@ label {
                     <input type="checkbox" id="csharp" name="languages" value="csharp">
                     <label for="csharp">C#</label>
                 </div>
-            </div>
-            
-            <div class="divider"></div>
-            
+            </div>            
+            <div class="divider"></div>            
             <h2>Bạn có câu hỏi gì cho ITviec không?</h2>
             <div class="form-group">
                 <textarea id="question" name="question" rows="5" placeholder="Enter your comment here"></textarea>
@@ -209,7 +186,6 @@ label {
             <button type="submit">submit</button>
         </form>
     </div>
-
     <script>
         document.getElementById('surveyForm').addEventListener('submit', function(e) {
             e.preventDefault();
